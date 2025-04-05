@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Hotel>
+	<!-- ERROR 1: Root element should be <Hotels>, not <Hotel> -->
+	<Hotel ID="H001">
+		<Name>Grand Plaza</Name>
+		<Address>123 Main St, Cityville</Address>
+		<!-- ERROR 2: Missing <Phone> element -->
+		<Rating>4.5</Rating>
+	</Hotel>
+	<Hotel>
+		<Name>Sea View Resort</Name>
+		<!-- ERROR 3: Missing required 'ID' attribute -->
+		<Address>456 Ocean Ave, Beach Town</Address>
+		<Phone>+1-555-5678</Phone>
+		<Rating>4.7</Rating>
+	</Hotel>
+	<Hotel ID="H003">
+		<Name>Mountain Lodge</Name>
+		<Address>789 Hilltop Dr, Mountain City</Address>
+		<Phone>+1-555-9876</Phone>
+		<Rating>4.2</Rating>
+	</Hotel>
+	<Hotel ID="H004">
+		<Name>Sunrise Inn</Name>
+		<!-- ERROR 4: Duplicate <Name> elements are not allowed -->
+		<Name>Duplicate Name</Name>
+		<Address>159 Sunset Blvd, Desert Town</Address>
+		<Phone>+1-555-6543</Phone>
+		<Rating>3.8</Rating>
+	</Hotel>
+	<Hotel ID="H005">
+		<Name>Lakeview Hotel</Name>
+		<Address>42 River Rd, Lake City</Address>
+		<Phone>+1-555-7777</Phone>
+		<Rating>4.0</Rating>
+	</Hotel>
+</Hotel>
